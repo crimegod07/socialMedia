@@ -1,0 +1,15 @@
+//create folder codiel
+1. create index.js
+2. npm init - setup packages for project
+3. make directories
+    a- routes --> it includes all path like /home /profile
+    b- controller --> use for maping into different files
+    c- views --> different html files
+    d- models --> schemas like we used in contact list like name and phone
+    e- config --> connecting databases
+
+4. npm install express
+
+
+
+

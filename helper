@@ -9,7 +9,8 @@
     e- config --> connecting databases
 
 4. npm install express
-
+5. setup routes and controller
+6.setup viewEngine --> install ejs and tell index.js  by using app.set
 
 
 

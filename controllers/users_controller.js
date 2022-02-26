@@ -9,7 +9,7 @@ module.exports.profile = function(req, res) {
                   user: user
               })
           }
-          return res.redirect('/users/sign-in');
+          return res.redirect('/users/sign-up');
       })
     }else{
         return res.redirect('/users/sign-in');
@@ -45,7 +45,7 @@ module.exports.create = function(req, res) {
                     if(err){
                         console.log('error in creating user while signing up'); return
                     }
-                    return res.redirect('/users/sign-in');
+                    return res.redirect('/user/sign-in');
                 })
             }else{
                 return res.redirect('back');

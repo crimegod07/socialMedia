@@ -11,6 +11,26 @@
 4. npm install express
 5. setup routes and controller
 6.setup viewEngine --> install ejs and tell index.js  by using app.set
+7. npm install express-ejs-layouts
+8. do some styling and check its working - setup static file access for layout and pages
+9. setup mongodb
+        const mongoose = require('mongoose');
+
+     //connecting in development environ ment
+      mongoose.connect('mongodb://localhost/codial_development');
+
+        const db = mongoose.connection;
+
+        db.on('error', console.error.bind(console, "Erroe connecting to mongodb"));
+
+         db.once('open', function(){
+        console.log("connected to Database :: MongoDB");
+          });
+
+module.exports = db;
+
+10. install passport for authentication
+
 
 
 
